@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>260</x>
-      <y>20</y>
+      <x>310</x>
+      <y>130</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -29,8 +29,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>260</x>
-      <y>320</y>
+      <x>310</x>
+      <y>430</y>
       <w>380</w>
       <h>190</h>
     </coordinates>
@@ -50,13 +50,40 @@ bg=red</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>10</x>
-      <y>20</y>
+      <x>60</x>
+      <y>130</y>
       <w>200</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>Created by PeytonTrevino
 bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>130</y>
+      <w>330</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Node&lt;T ype&gt;
+--
+-nodeData : Type
+nodePointer : Node&lt;Type&gt;*
+--
+Constructors
++Node() : constructor
++Node(Type value): constructor
++Node(Type data, Node&lt;Type&gt;*pointer): constructor
+
+Methods
++getNodeData() : Type
++getNodePointer() : Node&lt;Type&gt;
++setNodeData(Type data) : void
++ setNodePointer(node&lt;Type&gt; * next): void
+
+bg=magenta</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
