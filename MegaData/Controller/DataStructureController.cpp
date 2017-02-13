@@ -13,6 +13,16 @@ using namespace std;
 
 DataStructureController :: DataStructureController()
 {
+    wordNode = Node<string>("derpy mcderpface");
+    numberNode = Node<int>();
+}
+
+void DataStructureController:: testNodes()
+{
+    cout << "" << endl;
+    cout << wordNode.getNodeData() << endl;
+    cout << "" << endl;
+    cout << numberNode.getNodeData() << endl;
     
 }
 
