@@ -29,8 +29,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>310</y>
+      <x>430</x>
+      <y>380</y>
       <w>380</w>
       <h>190</h>
     </coordinates>
@@ -65,9 +65,9 @@ bg=blue</panel_attributes>
       <x>840</x>
       <y>10</y>
       <w>380</w>
-      <h>230</h>
+      <h>270</h>
     </coordinates>
-    <panel_attributes>Node&lt;T ype&gt;
+    <panel_attributes>Node&lt;Type&gt;
 --
 -nodeData : Type
 nodePointer : Node&lt;Type&gt;*
@@ -85,5 +85,55 @@ Methods
 
 bg=magenta</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>860</x>
+      <y>380</y>
+      <w>380</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Array&lt;Type&gt;
+--
+
+-front : Node&lt;Type&gt;*
+-size : int
+
+--
+Constructor's
++Array(): constructor
++Array(int Size): constructor
+
+Methods
++getSize():int
++setAtIndex(int index, Type value): void
++getFromIndex(int index): Type
+
+
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>270</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>270</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
