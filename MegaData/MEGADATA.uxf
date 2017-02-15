@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>420</x>
-      <y>10</y>
+      <x>130</x>
+      <y>250</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -23,14 +23,15 @@
 +IntNOde(int value): init
 +IntNode(int value, IntNode * nextNode): constructor
 
-bg=blue</panel_attributes>
+bg=blue
+group=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>430</x>
-      <y>380</y>
+      <x>120</x>
+      <y>620</y>
       <w>380</w>
       <h>190</h>
     </coordinates>
@@ -44,14 +45,15 @@ bg=blue</panel_attributes>
 +getFromIndex(int index) : int
 +getSize() : int
 
-bg=red</panel_attributes>
+bg=red
+group=1</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
       <x>170</x>
-      <y>10</y>
+      <y>80</y>
       <w>200</w>
       <h>30</h>
     </coordinates>
@@ -62,8 +64,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>840</x>
-      <y>10</y>
+      <x>550</x>
+      <y>220</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -83,14 +85,15 @@ Methods
 +setNodeData(Type data) : void
 + setNodePointer(node&lt;Type&gt; * next): void
 
-bg=magenta</panel_attributes>
+bg=magenta
+group=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>860</x>
-      <y>380</y>
+      <x>570</x>
+      <y>590</y>
       <w>380</w>
       <h>190</h>
     </coordinates>
@@ -111,29 +114,56 @@ Methods
 +getFromIndex(int index): Type
 
 
-bg=cyan</panel_attributes>
+bg=cyan
+group=2</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1050</x>
-      <y>270</y>
-      <w>30</w>
+      <x>760</x>
+      <y>480</y>
+      <w>50</w>
       <h>130</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
     <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>270</y>
-      <w>30</w>
+      <x>290</x>
+      <y>510</y>
+      <w>50</w>
       <h>130</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=1..n</panel_attributes>
     <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>100</x>
+      <y>180</y>
+      <w>430</w>
+      <h>670</h>
+    </coordinates>
+    <panel_attributes>Typed Sample
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>540</x>
+      <y>180</y>
+      <w>430</w>
+      <h>670</h>
+    </coordinates>
+    <panel_attributes>Name
+group=2</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
