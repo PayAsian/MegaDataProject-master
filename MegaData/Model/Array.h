@@ -55,7 +55,7 @@ Array<Type> :: Array(int size)
     
     for(int index = 1; index < size; index++)
     {
-        Node<Type>() * current = new Node<Type>();
+        Node<Type> * current = new Node<Type>();
         current->setNodePointer(front);
         front = current;
     }
@@ -65,7 +65,7 @@ template <class Type>
 void Array<Type> :: setAtIndex(int index, Type data)
 {
     assert(index >= 0 && index < size);
-    Type balue;
+    Type value;
     
     for(int spot = 0; spot < index; spot++)
     {
@@ -105,16 +105,16 @@ Array<Type> :: ~Array()
     while(front != nullptr)
     {
         //Move to next node in Array
-        front = front->getNodePointer()
+        front = front->getNodePointer();
         cout << "Moving to the next node. At: " << count << endl;
         //Delete the gront pointer
         delete remove;
         cout << "Deleting the old front pointer." << endl;
         //Move delete to the new front
         remove = front;
-        cout << "Moving to a new front pointer." << enl;
+        cout << "Moving to a new front pointer." << endl;
         count--;
-        cout << "Front is at: " << front << " count is: " << count << enl;
+        cout << "Front is at: " << front << " count is: " << count << endl;
     }
 }
 
