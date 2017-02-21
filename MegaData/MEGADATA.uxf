@@ -64,8 +64,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>650</x>
-      <y>180</y>
+      <x>740</x>
+      <y>50</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -92,10 +92,10 @@ group=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>670</x>
-      <y>550</y>
-      <w>380</w>
-      <h>190</h>
+      <x>760</x>
+      <y>420</y>
+      <w>470</w>
+      <h>450</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
 --
@@ -108,8 +108,13 @@ Constructor's
 +Array(): constructor
 +Array(int Size): constructor
 
+Advanced
++ ~Array&lt;Type&gt;():destructor
++Array&lt;Type&gt;(const Array&lt;Type&gt;&amp;toBeCopied): copy constructor
+
 Methods
 +getSize():int
++getFront()const:Node&lt;Type&gt;*
 +setAtIndex(int index, Type value): void
 +getFromIndex(int index): Type
 
@@ -121,8 +126,8 @@ group=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>860</x>
-      <y>440</y>
+      <x>950</x>
+      <y>310</y>
       <w>50</w>
       <h>130</h>
     </coordinates>
@@ -157,10 +162,10 @@ group=1</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>640</x>
-      <y>140</y>
-      <w>430</w>
-      <h>670</h>
+      <x>730</x>
+      <y>10</y>
+      <w>670</w>
+      <h>880</h>
     </coordinates>
     <panel_attributes>Name
 group=2</panel_attributes>
