@@ -11,6 +11,8 @@
 
 #include "Node.hpp"
 #include <assert.h>
+#include <iostream>
+using namespace std;
 
 template<class Type>
 class Array

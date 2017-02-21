@@ -10,6 +10,7 @@
 #define DataStructureController_hpp
 
 #include "/Users/ptre8426/Downloads/MegaDataProject-master/MegaData/Model/Node.hpp"
+#include "/Users/ptre8426/Downloads/MegaDataProject-master/MegaData/Model/Array.h"
 #include <string>
 
 using namespace std;
