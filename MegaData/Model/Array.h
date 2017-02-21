@@ -116,6 +116,37 @@ Array<Type> :: ~Array()
     }
 }
 
+template <class Type>
+Array<Type> :: Array(const Array<Type> & toBeCopied)
+{
+    this->size = toBeCopied.getSize();
+    
+    //Build Data Structor
+    this->front = new Node<Type>();
+    for(int indes = 1; index < size; index++)
+    {
+        Node<Type> * temp = new Node<Type>();
+        temp->setNdoePointer(front);
+        front = temp;
+    }
+    //Copy values into new Array.
+    //This could be done at the same time as the build step
+    //but this is easier to explain
+    Node<Type> * copyTemp = toBeCopied.getFront();
+    Node<Type> * updated = this->front;
+    for(int index = 0; index < size; index++)
+    {
+        updated->setNodeData(copyTemp->getNodeData());
+        updated = updated->getNodePointer();
+        copyTemp = copyTemp->getNodePointer();
+    }
+}
+
+template <class Type>
+Node<Type> * Array<Type> :: getFront () const
+{
+    return front;
+}
 
 #endif /* Array_h */
 
