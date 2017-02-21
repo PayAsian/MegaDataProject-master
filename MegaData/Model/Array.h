@@ -21,6 +21,13 @@ private:
 public:
     Array();
     Array(int size);
+    
+    //Destructor
+    ~Array<Type>();
+    //Copy Constructor
+    Array<Type>(const Array<Type> & toBeCopied);
+    
+    //Helper Methods
     void setAtIndex(int index, Type value);
     Type getFromIndex(int index);
     int getSize();
