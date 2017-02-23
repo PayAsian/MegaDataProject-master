@@ -24,6 +24,7 @@ public:
     ~List<Type>();
     void setAtIndex(int index, Type value);
     void addAtIndex(int index, Type data);
+    void remove(int index);
     Type getFromIndex(int index);
     int getSize();
     
@@ -85,6 +86,72 @@ void List<Type> :: addAtIndex(int index, Type value)
             previous = current;
             current = current->getNodePointer();
         }
+        
+        previous->setNodePointer(insertedNode);
+        insertedNode->setNodePointer(current);
+        
+            size++;
+    }
+ 
+}
+
+template<class Type>
+Type List<Type> :: remove(int index)
+{
+    assert(index >= 0 && index < size);
+    Type removed;
+    
+    Node<Type> * current = front;
+    Node<Type> * previous = nullptr;
+    Node<Type> * toBeRemoved = nullptr;
+    
+    if(index == 0)
+    {
+        toBeRemoved = front;
+        this->front = front->getNodePointer();
+    }
+    
+    toBeRemoved = current;
+    previous->setNodePointer(nullptr);
+    this-end = previous;
+    
+    if(index == 0)
+    {
+        toBeRemoved = front;
+        this->front = front->getnodePointer();
+    }
+    else if(index == size - 1)
+    {
+        for(int spot = 0; spot < index; spot++)
+        {
+            previous = current;
+            current = current->getNodePointer();
+        }
+        
+        toBeRemoved = current;
+        previous->setNodePointer(nullptr);
+        this->end = previous;
+        
+        else
+        {
+            for(spot = 0; spot < index; spot++)
+            {
+                previous = current;
+                current = current->getNodePointer();
+            }
+            
+            toBeRemoved = current;
+            current = toBeRemoved->getNodePointer();
+            previous->setNodePointer(current);
+            
+        }
+        
+        removed = toBeRemoved->getNodeData();
+        
+        delete toBeRemoved;
+        
+        size--;
+        return removed;
     }
     
 }
