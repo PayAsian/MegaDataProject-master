@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>50</x>
-      <y>180</y>
+      <x>30</x>
+      <y>210</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -30,8 +30,8 @@ group=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>40</x>
-      <y>550</y>
+      <x>20</x>
+      <y>580</y>
       <w>380</w>
       <h>190</h>
     </coordinates>
@@ -52,8 +52,8 @@ group=1</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>20</x>
-      <y>70</y>
+      <x>0</x>
+      <y>100</y>
       <w>200</w>
       <h>30</h>
     </coordinates>
@@ -64,8 +64,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
-      <y>150</y>
+      <x>450</x>
+      <y>180</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -92,8 +92,8 @@ group=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>490</x>
-      <y>520</y>
+      <x>470</x>
+      <y>550</y>
       <w>480</w>
       <h>320</h>
     </coordinates>
@@ -126,8 +126,8 @@ group=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>680</x>
-      <y>410</y>
+      <x>660</x>
+      <y>440</y>
       <w>50</w>
       <h>130</h>
     </coordinates>
@@ -138,8 +138,8 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>440</y>
+      <x>190</x>
+      <y>470</y>
       <w>50</w>
       <h>130</h>
     </coordinates>
@@ -150,8 +150,8 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>20</x>
-      <y>110</y>
+      <x>0</x>
+      <y>140</y>
       <w>430</w>
       <h>670</h>
     </coordinates>
@@ -162,8 +162,8 @@ group=1</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>460</x>
-      <y>110</y>
+      <x>440</x>
+      <y>140</y>
       <w>530</w>
       <h>760</h>
     </coordinates>
@@ -174,8 +174,8 @@ group=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1000</x>
-      <y>130</y>
+      <x>980</x>
+      <y>160</y>
       <w>430</w>
       <h>300</h>
     </coordinates>
