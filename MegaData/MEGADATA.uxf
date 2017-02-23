@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>240</x>
-      <y>200</y>
+      <x>50</x>
+      <y>180</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -30,8 +30,8 @@ group=1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>230</x>
-      <y>570</y>
+      <x>40</x>
+      <y>550</y>
       <w>380</w>
       <h>190</h>
     </coordinates>
@@ -52,8 +52,8 @@ group=1</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>280</x>
-      <y>30</y>
+      <x>20</x>
+      <y>70</y>
       <w>200</w>
       <h>30</h>
     </coordinates>
@@ -64,8 +64,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>750</x>
-      <y>40</y>
+      <x>470</x>
+      <y>150</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -92,10 +92,10 @@ group=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>410</y>
-      <w>470</w>
-      <h>450</h>
+      <x>490</x>
+      <y>520</y>
+      <w>480</w>
+      <h>320</h>
     </coordinates>
     <panel_attributes>Array&lt;Type&gt;
 --
@@ -126,8 +126,8 @@ group=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>960</x>
-      <y>300</y>
+      <x>680</x>
+      <y>410</y>
       <w>50</w>
       <h>130</h>
     </coordinates>
@@ -138,8 +138,8 @@ m2=1..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>400</x>
-      <y>460</y>
+      <x>210</x>
+      <y>440</y>
       <w>50</w>
       <h>130</h>
     </coordinates>
@@ -150,8 +150,8 @@ m2=1..n</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>210</x>
-      <y>130</y>
+      <x>20</x>
+      <y>110</y>
       <w>430</w>
       <h>670</h>
     </coordinates>
@@ -162,10 +162,10 @@ group=1</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>740</x>
-      <y>0</y>
-      <w>670</w>
-      <h>880</h>
+      <x>460</x>
+      <y>110</y>
+      <w>530</w>
+      <h>760</h>
     </coordinates>
     <panel_attributes>Name
 group=2</panel_attributes>
@@ -174,10 +174,10 @@ group=2</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>230</x>
-      <y>860</y>
-      <w>500</w>
-      <h>340</h>
+      <x>1000</x>
+      <y>130</y>
+      <w>430</w>
+      <h>300</h>
     </coordinates>
     <panel_attributes>Model :: List&lt;Type&gt;
 --
@@ -189,13 +189,16 @@ group=2</panel_attributes>
 + ~List&lt;Type&gt;(): destructor
 
 +addAtIndex(int index, Type value): void
-+add(Type value): void
++addFront(Type value): void
++addEnd(Type value): void
 +remove(int index): void
 +setAtIndex(int index, Type data): Type
 +getFromIndex(int index): Type
 +contains(Type data): bool
 +getSize()const : int
-+getFront() const : Node&lt;Type&gt;*</panel_attributes>
++getFront() const : Node&lt;Type&gt;*
++getEnd()const:Node&lt;Type&gt;*
+bg=pink</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
