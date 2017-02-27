@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>30</x>
-      <y>210</y>
+      <y>110</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -31,7 +31,7 @@ group=1</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>20</x>
-      <y>580</y>
+      <y>480</y>
       <w>380</w>
       <h>190</h>
     </coordinates>
@@ -53,7 +53,7 @@ group=1</panel_attributes>
     <id>UMLNote</id>
     <coordinates>
       <x>0</x>
-      <y>100</y>
+      <y>0</y>
       <w>200</w>
       <h>30</h>
     </coordinates>
@@ -65,7 +65,7 @@ bg=blue</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>450</x>
-      <y>180</y>
+      <y>80</y>
       <w>380</w>
       <h>270</h>
     </coordinates>
@@ -86,14 +86,14 @@ Methods
 + setNodePointer(node&lt;Type&gt; * next): void
 
 bg=magenta
-group=2</panel_attributes>
+group=3</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>470</x>
-      <y>550</y>
+      <y>450</y>
       <w>480</w>
       <h>320</h>
     </coordinates>
@@ -120,14 +120,14 @@ Methods
 
 
 bg=cyan
-group=2</panel_attributes>
+group=3</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>660</x>
-      <y>440</y>
+      <y>340</y>
       <w>50</w>
       <h>130</h>
     </coordinates>
@@ -139,7 +139,7 @@ m2=1..n</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>190</x>
-      <y>470</y>
+      <y>370</y>
       <w>50</w>
       <h>130</h>
     </coordinates>
@@ -151,7 +151,7 @@ m2=1..n</panel_attributes>
     <id>UMLPackage</id>
     <coordinates>
       <x>0</x>
-      <y>140</y>
+      <y>40</y>
       <w>430</w>
       <h>670</h>
     </coordinates>
@@ -163,19 +163,19 @@ group=1</panel_attributes>
     <id>UMLPackage</id>
     <coordinates>
       <x>440</x>
-      <y>140</y>
-      <w>530</w>
+      <y>40</y>
+      <w>1390</w>
       <h>760</h>
     </coordinates>
     <panel_attributes>Name
-group=2</panel_attributes>
+group=3</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>980</x>
-      <y>160</y>
+      <x>1390</x>
+      <y>710</y>
       <w>430</w>
       <h>300</h>
     </coordinates>
@@ -200,5 +200,44 @@ group=2</panel_attributes>
 +getEnd()const:Node&lt;Type&gt;*
 bg=pink</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>70</y>
+      <w>780</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>BiDirectionalNode&lt;Type&gt;
+--
+-nodeData: type
+-previous : BiDirectionalnode&lt;Type&gt;*
+-next : BiDirectionalNode&lt;Type&gt;*
+
+--
++BiDirectionalNode(): constructor
++BiDirectionalNode(Typoe data): constructor
++BiDirectionalNode(Type data BiDirectionalNode&lt;Type&gt;*previous, BiDirectionalNode&lt;Type&gt;*next): constructor
+
++getNodeData(): Type
++setNodeData(): void
++getPreviousNode(): BiDirectionalNode&lt;Type&gt;*
++getNextNode(): BiDirectionalNode&lt;Type&gt;*
++setNextNode(BiDirectionalNode&lt;Type&gt;*next):void
++setPreviousNode(BiDirectional&lt;Type&gt;*previous): void
+group=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>210</y>
+      <w>220</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
   </element>
 </diagram>
