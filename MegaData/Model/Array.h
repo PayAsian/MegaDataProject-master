@@ -65,13 +65,12 @@ template <class Type>
 void Array<Type> :: setAtIndex(int index, Type data)
 {
     assert(index >= 0 && index < size);
-    Type value;
-    
+    Node<Type> * current = front;
     for(int spot = 0; spot < index; spot++)
     {
         current = current->getNodePointer();
     }
-    current->setNodeData(value);
+    current->setNodeData(data);
 }
 
 template <class Type>

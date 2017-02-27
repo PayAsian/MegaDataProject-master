@@ -11,6 +11,7 @@
 
 #include "/Users/ptre8426/Downloads/MegaDataProject-master/MegaData/Model/Node.hpp"
 #include "/Users/ptre8426/Downloads/MegaDataProject-master/MegaData/Model/Array.h"
+#include "/Users/ptre8426/Downloads/MegaDataProject-master/MegaData/Model/List.h"
 #include <string>
 
 using namespace std;
@@ -22,6 +23,8 @@ private:
     Node<int> numberNode;
     Node<string> wordNode;
     void testNodes();
+    void testListIntro();
+    
 public:
     DataStructureController();
     void start();

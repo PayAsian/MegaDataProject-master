@@ -58,5 +58,20 @@ void DataStructureController :: testIntArray()
         cout << temp.getFromIndex(index) << " is at spot " << index << endl;
     }
     
+    void DataStructureController :: testListIntro()
+    {
+        List<int> sample;
+        sample.addFront(2);
+        sample.addEnd(3);
+        sample.addFront(1);
+        
+        for(int index = 0; index < sample.getSize(); index++ )
+        {
+            cout << sample.getFromIndex(index) << endl;
+            cout << sample.remove(1) << endl;
+        }
+        
+        count << "Size should read 3 and is " << sample.getSize() << endl;
+    }
     
 }

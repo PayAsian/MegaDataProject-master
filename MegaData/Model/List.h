@@ -8,27 +8,129 @@
 
 #ifndef List_h
 #define List_h
-#include <assert.h>
 
+#include <assert.h>
+#include "Node.hpp"
+
+
+template<class Type>
 class List
 {
 private:
     int size;
     Node<Type> * front;
+    Node<Type> * end;
     
 public:
-    List();
     List(int size);
     List<Type>();
     List<Type>(const List<Type> & toBeCopied);
     ~List<Type>();
+    
+    Type getFromIndex(int index);
     void setAtIndex(int index, Type value);
     void addAtIndex(int index, Type data);
+    
     void remove(int index);
-    Type getFromIndex(int index);
     int getSize();
+    bool contains(Type value);
+    Node<Type> * getFront() const;
+    Node<Type> * getEnd() const;
     
 };
+
+template<class Type>
+List<Type> :: ~List()
+{
+    Node<Type> * destruction = front;
+    while(front != nullptr)
+    {
+        front = front->getNodePointer();
+        delete destruction;
+        destruction = front;
+    }
+}
+
+template<class Type>
+Type List<Type> :: setAtIndex(int index, Type data)
+{
+    assert(index >= 0 && index < size);
+    Type removedData;
+    
+    Node<Type> * current = front;
+    
+    for(int spot = 0; spot < index; spot++)
+    {
+        current = current->getNodePointer();
+    }
+    
+    removedData = current->getNodeData();
+    current->setNodeData(data);
+    
+    return removedData;
+}
+
+template<class Type>
+Type List<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < size);
+    Type information;
+    
+    Node<Type> * current = front;
+    for(int position = 0; position < index; position++)
+    {
+        current = current->getnodePointer();
+    }
+    
+    information = current->getNodeData();
+    
+    return information;
+}
+
+template<class Type>
+List<Type> :: List()
+{
+    this->size = 0;
+    this->front = nullptr;
+    this->end = nullptr;
+}
+
+template<class Type>
+int List<Type> :: getSize() const
+{
+    return this->size;
+}
+
+template<class Type>
+bool List<Type> :: contains(Type findMe)
+{
+    bool isInList = false;
+    Node<Type> * current = front;
+    
+    for(int index = 0; index < size; index++)
+    {
+        if(current->getNodeData == findMe)
+        {
+            isInList = true;
+            return isInList;
+        }
+    }
+    return isInList;
+}
+
+template<class Type>
+Node<Type> * List<Type> :: getFront() const
+{
+    return this->front;
+}
+
+template<class Type>
+Node<Type> * List<Type> :: getEnd() const
+{
+    return this->end;
+}
+
+
 
 template<class Type>
 void List<Type> :: addFront(Type value)
