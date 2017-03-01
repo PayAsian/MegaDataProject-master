@@ -28,8 +28,8 @@ public:
     ~List<Type>();
     
     Type getFromIndex(int index);
-    void setAtIndex(int index, Type value);
-    void addAtIndex(int index, Type data);
+    Type setAtIndex(int index, Type data);
+    void addAtIndex(int index, Type value);
     
     void remove(int index);
     int getSize();
@@ -173,7 +173,7 @@ void List<Type> :: addAtIndex(int index, Type value)
     {
         addFront(value);
     }
-    else if
+    else if()
     {
         addEnd(value);
     }
@@ -198,7 +198,7 @@ void List<Type> :: addAtIndex(int index, Type value)
 }
 
 template<class Type>
-Type List<Type> :: remove(int index)
+void List<Type> :: remove(int index)
 {
     assert(index >= 0 && index < size);
     Type removed;
