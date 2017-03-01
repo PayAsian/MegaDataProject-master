@@ -32,7 +32,7 @@ public:
     //Helper Methods
     void setAtIndex(int index, Type value);
     Type getFromIndex(int index);
-    int getSize();
+    int getSize() const;
     
 };
 
