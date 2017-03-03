@@ -235,7 +235,7 @@ bg=CYAN</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1040</x>
-      <y>600</y>
+      <y>580</y>
       <w>510</w>
       <h>260</h>
     </coordinates>
@@ -261,7 +261,7 @@ group=2</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1030</x>
-      <y>1000</y>
+      <y>980</y>
       <w>240</w>
       <h>230</h>
     </coordinates>
@@ -287,7 +287,7 @@ group=2</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1290</x>
-      <y>1000</y>
+      <y>980</y>
       <w>260</w>
       <h>230</h>
     </coordinates>
@@ -313,7 +313,7 @@ group=2</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1560</x>
-      <y>890</y>
+      <y>870</y>
       <w>320</w>
       <h>200</h>
     </coordinates>
@@ -339,7 +339,7 @@ group=2</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1210</x>
-      <y>850</y>
+      <y>830</y>
       <w>110</w>
       <h>170</h>
     </coordinates>
@@ -351,7 +351,7 @@ group=2</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1290</x>
-      <y>850</y>
+      <y>830</y>
       <w>100</w>
       <h>170</h>
     </coordinates>
@@ -363,7 +363,7 @@ group=2</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1290</x>
-      <y>850</y>
+      <y>830</y>
       <w>360</w>
       <h>60</h>
     </coordinates>
@@ -377,18 +377,18 @@ group=2</panel_attributes>
       <x>1400</x>
       <y>450</y>
       <w>30</w>
-      <h>170</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 fg=blue</panel_attributes>
-    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
-      <y>870</y>
-      <w>300</w>
+      <x>640</x>
+      <y>830</y>
+      <w>330</w>
       <h>340</h>
     </coordinates>
     <panel_attributes>DoubleList&lt;Type&gt;
@@ -403,16 +403,10 @@ fg=blue</panel_attributes>
 +add(Type data): void
 +remove(int index): Type
 
-+addAtIndex(int index, Type value): void
-+addFront(Type value): void
-+addEnd(Type value): void
-+remove(int index): void
-+setAtIndex(int index, Type data): Type
-+getFromIndex(int index): Type
-+contains(Type data): bool
-+getSize()const : int
-+getFront() const : Node&lt;Type&gt;*
-+getEnd()const:Node&lt;Type&gt;*
++addFront(Type data): void
++addEnd(Type data): void
++addAtIndex(int index, Type data): void
++addAtIndexFast(int index, Type value): void
 
 
 group=2</panel_attributes>
@@ -421,13 +415,13 @@ group=2</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1000</x>
-      <y>850</y>
-      <w>320</w>
-      <h>90</h>
+      <x>960</x>
+      <y>830</y>
+      <w>360</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 group=2</panel_attributes>
-    <additional_attributes>300.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>340.0;10.0;10.0;50.0</additional_attributes>
   </element>
 </diagram>
