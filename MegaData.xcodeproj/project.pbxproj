@@ -34,6 +34,7 @@
 		1922DBB31E6A04B000F8B73B /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Queue.h; path = Model/Queue.h; sourceTree = "<group>"; };
 		1948B5831E5CD99800CD82D5 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = Model/List.h; sourceTree = "<group>"; };
 		1955086C1E64C74C00B97922 /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiDirectionalNode.h; path = Model/BiDirectionalNode.h; sourceTree = "<group>"; };
+		198FD6901E6F4ACC00BA93FC /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = Model/Stack.h; sourceTree = "<group>"; };
 		1999F8851E49059C001D3B69 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		1999F8911E490F18001D3B69 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		1999F8921E490F18001D3B69 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 				19B5626B1E675D3A00D2D2EF /* DoublyLinkedList.hpp */,
 				19B5626C1E67681C00D2D2EF /* CircularList.h */,
 				1922DBB31E6A04B000F8B73B /* Queue.h */,
+				198FD6901E6F4ACC00BA93FC /* Stack.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
