@@ -30,7 +30,7 @@ public:
     
     void setFront(BiDirectionalNode<Type> * front);
     void setSize(int updated);
-    void setEnd(BiDirectionalnode<Type> * end);
+    void setEnd(BiDirectionalNode<Type> * end);
 };
 
 template <class Type>
@@ -65,7 +65,7 @@ BiDirectionalNode<Type> * DoublyLinkedList<Type> ::getEnd()
 }
 
 template<class Type>
-void DoublyLinkedList<Type> :; setFront(BiDirectionalNode<Type> * front)
+void DoublyLinkedList<Type> :: setFront(BiDirectionalNode<Type> * front)
 {
     this->front = front;
 }
