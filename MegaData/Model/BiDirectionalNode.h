@@ -28,15 +28,48 @@ public:
 template<class Type>
 BiDirectionalNode<Type> :: BiDirectionalNode() : Node()
 {
-    
+    this->nextPointer = nullptr;
+    this->previous = nullptr;
 }
 
 template<class Type>
 BiDirecitonalNode<Type> :: BiDirectionalNode(Type data) : Node<Type>(data)
 {
-    
+    this->nextPointer = nullptr;
+    this->previous = nullptr;
 }
 
+template<class Type>
+BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getNextPointer()
+{
+    return this->nextPointer;
+}
 
+template<class Type>
+BiDirectionalode<Type> * BiDirectionalNode<Type> :: ggetPreviousPointer()
+{
+    return this->previous;
+}
+
+template<class Type>
+BiDirectionalNode<Type> :; BiDirecionalNode(Type data, BiDirectionalNode<Type> * previous, BiDirectionalnode<Type> * next) : Node<Type>(data, next)
+{
+    this->nextPoiner = next;
+    this->previous = previous;
+}
+
+template<class Type>
+void BiDirectionalNode<Type> :: setNextPointer(BiDirectioanlNode<Type> * next)
+{
+    this->nextPointer = next;
+}
+
+template<class Type>
+void BiDirectionalNode<Type> :: setPreviousPointer(BiDirectionalNode<Type> * previous)
+{
+    this->previous = previous;
+}
+
+s
 
 #endif /* BiDirectionalNode_h */

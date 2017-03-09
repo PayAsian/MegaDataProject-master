@@ -30,9 +30,11 @@ public:
     Type getFromIndex(int index);
     Type setAtIndex(int index, Type data);
     void addAtIndex(int index, Type value);
+    void addFront(Type value);
+    void addEnd(Type value);
     
-    void remove(int index);
-    int getSize();
+    void remove(int index, Type data);
+    int getSize() const;
     bool contains(Type value);
     Node<Type> * getFront() const;
     Node<Type> * getEnd() const;
@@ -173,7 +175,7 @@ void List<Type> :: addAtIndex(int index, Type value)
     {
         addFront(value);
     }
-    else if()
+    else if(index == 0)
     {
         addEnd(value);
     }
@@ -198,7 +200,7 @@ void List<Type> :: addAtIndex(int index, Type value)
 }
 
 template<class Type>
-void List<Type> :: remove(int index)
+void List<Type> :: remove(int index, Type  data)
 {
     assert(index >= 0 && index < size);
     Type removed;
@@ -233,10 +235,10 @@ void List<Type> :: remove(int index)
         toBeRemoved = current;
         previous->setnextPointer(nullptr);
         this->end = previous;
-        
+    }
         else
         {
-            for(spot = 0; spot < index; spot++)
+            for(int spot = 0; spot < index; spot++)
             {
                 previous = current;
                 current = current->getnextPointer();
@@ -256,7 +258,7 @@ void List<Type> :: remove(int index)
         return removed;
     }
     
-}
+
 
 
 #endif /* List_h */

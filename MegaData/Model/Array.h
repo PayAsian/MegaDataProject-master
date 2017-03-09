@@ -28,6 +28,7 @@ public:
     ~Array<Type>();
     //Copy Constructor
     Array<Type>(const Array<Type> & toBeCopied);
+    Node<Type> * getFront() const;
     
     //Helper Methods
     void setAtIndex(int index, Type value);
@@ -124,7 +125,7 @@ Array<Type> :: Array(const Array<Type> & toBeCopied)
     
     //Build Data Structor
     this->front = new Node<Type>();
-    for(int indes = 1; index < size; index++)
+    for(int index = 1; index < size; index++)
     {
         Node<Type> * temp = new Node<Type>();
         temp->setNdoePointer(front);

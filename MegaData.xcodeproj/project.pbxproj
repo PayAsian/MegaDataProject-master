@@ -10,6 +10,7 @@
 		19095CE71E4BA93600B85990 /* IntNodeArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19095CE51E4BA93600B85990 /* IntNodeArray.cpp */; };
 		19095CEA1E4BB22100B85990 /* DataStructureController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19095CE81E4BB22100B85990 /* DataStructureController.cpp */; };
 		19095CED1E4BB24300B85990 /* NodeRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19095CEC1E4BB24300B85990 /* NodeRunner.cpp */; };
+		1994AF331E71E3870024103D /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1994AF311E71E3870024103D /* Timer.cpp */; };
 		1999F8931E490F18001D3B69 /* IntNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1999F8911E490F18001D3B69 /* IntNode.cpp */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,9 @@
 		1948B5831E5CD99800CD82D5 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = List.h; path = Model/List.h; sourceTree = "<group>"; };
 		1955086C1E64C74C00B97922 /* BiDirectionalNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BiDirectionalNode.h; path = Model/BiDirectionalNode.h; sourceTree = "<group>"; };
 		198FD6901E6F4ACC00BA93FC /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Stack.h; path = Model/Stack.h; sourceTree = "<group>"; };
+		1994AF301E71D8100024103D /* DoubleList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DoubleList.h; path = Model/DoubleList.h; sourceTree = "<group>"; };
+		1994AF311E71E3870024103D /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = "../../../Documents/C++/FirstProjectForCPlusPlus/FirstProjectForCPlusPlus/Model/Timer.cpp"; sourceTree = "<group>"; };
+		1994AF321E71E3870024103D /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = "../../../Documents/C++/FirstProjectForCPlusPlus/FirstProjectForCPlusPlus/Model/Timer.hpp"; sourceTree = "<group>"; };
 		1999F8851E49059C001D3B69 /* MegaData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MegaData; sourceTree = BUILT_PRODUCTS_DIR; };
 		1999F8911E490F18001D3B69 /* IntNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntNode.cpp; path = Model/IntNode.cpp; sourceTree = "<group>"; };
 		1999F8921E490F18001D3B69 /* IntNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IntNode.hpp; path = Model/IntNode.hpp; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				19B5626A1E675CE000D2D2EF /* Sample Single Type */,
+				1994AF311E71E3870024103D /* Timer.cpp */,
+				1994AF321E71E3870024103D /* Timer.hpp */,
 				199E6F941E523E8900173214 /* Node.hpp */,
 				19BB1F601E54E3A0009EA676 /* Array.h */,
 				1948B5831E5CD99800CD82D5 /* List.h */,
@@ -102,6 +108,7 @@
 				19B5626C1E67681C00D2D2EF /* CircularList.h */,
 				1922DBB31E6A04B000F8B73B /* Queue.h */,
 				198FD6901E6F4ACC00BA93FC /* Stack.h */,
+				1994AF301E71D8100024103D /* DoubleList.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 				1999F8931E490F18001D3B69 /* IntNode.cpp in Sources */,
 				19095CEA1E4BB22100B85990 /* DataStructureController.cpp in Sources */,
 				19095CE71E4BA93600B85990 /* IntNodeArray.cpp in Sources */,
+				1994AF331E71E3870024103D /* Timer.cpp in Sources */,
 				19095CED1E4BB24300B85990 /* NodeRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

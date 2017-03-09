@@ -24,6 +24,8 @@ private:
     Node<string> wordNode;
     void testNodes();
     void testListIntro();
+    void testListTiming();
+    
     
 public:
     DataStructureController();
