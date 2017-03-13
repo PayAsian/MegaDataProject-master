@@ -9,9 +9,14 @@
 #ifndef DataStructureController_hpp
 #define DataStructureController_hpp
 
-#include "/Users/ptre8426/Downloads/MegaDataProject-master/MegaData/Model/Node.hpp"
-#include "/Users/ptre8426/Downloads/MegaDataProject-master/MegaData/Model/Array.h"
-#include "/Users/ptre8426/Downloads/MegaDataProject-master/MegaData/Model/List.h"
+#include "../Model/Node.hpp"
+#include "../Model/Array.h"
+#include "../Model/List.h"
+#include "../Model/Stack.h"
+#include "../Model/Queue.h"
+#include "../Model/FoodItem.hpp"
+#include "../Model/CircularList.h"
+#include "../Model/Timer.hpp"
 #include <string>
 
 using namespace std;
@@ -25,6 +30,8 @@ private:
     void testNodes();
     void testListIntro();
     void testListTiming();
+    void testFoodQueue();
+    void testIntStack();
     
     
 public:

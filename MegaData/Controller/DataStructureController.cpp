@@ -120,4 +120,25 @@ void DataStructureController :: testIntArray()
             
     }
     
+    void DataStructureController :: testFoodQueue()
+    {
+        Queue<FoodItem> tastyFood;
+        FoodItem szechwan("spicy chinese dish");
+        
+        tastyFood.enqueue(szechwan);
+        FoodItem boring;
+        
+        FoodItem removed = tastyFood.dequeue();
+        cout << "The item removed from the queue was: " << removed.getFoodName() << " and should be: " << endl;
+    }
+    
+    void DataStructureController :: testIntStack()
+    {
+        Stack<int> numberStack;
+        numberSacck.add(2315);
+        numberStack.push(32);
+        int testValue = numberStack.pop();
+        cout << "Test value is " << testValue << " and should be 32 " << endl;
+    }
+    
 }

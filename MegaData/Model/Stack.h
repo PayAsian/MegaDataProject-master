@@ -9,6 +9,8 @@
 #ifndef Stack_h
 #define Stack_h
 
+#include "DoublyLinkedList.hpp"
+
 
 
 template<class Type>
@@ -23,7 +25,7 @@ public:
     Type pop();
     Type peek();
     void push(Type data);
-}
+};
 
 template<class Type>
 Stack<Type> :: Stack() : DoublyLinkedList<Type>()
@@ -53,7 +55,7 @@ void Stack<Type> :: add(Type valueToAdd)
 template<class Type>
 void Stack<Type> :: push(Type addedThing)
 {
-    BiDirecitonalNode<Type> * addToStack = new BiDirectionalnNode<Type>(addedThing);
+    BiDirectionalNode<Type> * addToStack = new BiDirectionalNode<Type>(addedThing);
     
     if(this->getSize() == 0 || this->getFront() == nullptr || this->getEnd() == nullptr)
     {

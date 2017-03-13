@@ -12,7 +12,7 @@
 #include "DoublyLinkedList.hpp"
 
 template<class Type>
-class Queue :: public DoublyLinkedList<Type>
+class Queue : public DoublyLinkedList<Type>
 {
 private:
     
@@ -60,9 +60,9 @@ void Queue<Type> :: add(Type value)
 */
 
 template<class Type>
-void Queue<Type> :: enqueue(Type insertedvalue)
+void Queue<Type> :: enqueue(Type insertedValue)
 {
-    BiDirectionalnode<Type> * added = new BiDirectionalNode<Type>(insertedValue);
+    BiDirectionalNode<Type> * added = new BiDirectionalNode<Type>(insertedValue);
     
     if(this->getSize() == 0 || this->getFront == nullptr || this->getEnd() == nullptr)
     {
@@ -113,7 +113,8 @@ Type Queue<Type> :: dequeue()
     }
     else
     {
-        this->setFront(removedMe->nextPointer());
+        this->setFront(removeMe->nextPointer());
+        this->getFront()->setPreviousPointer(nullptr);
     }
     
     delete removeMe;

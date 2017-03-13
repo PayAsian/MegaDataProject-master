@@ -18,8 +18,8 @@ private:
     //No need to redefine the private data members
     
 public:
-    CirucularList();
-    ~CiruclarList();
+    CircularList();
+    ~CircularList();
     
     void add(Type data);
     Type remove(int index);
