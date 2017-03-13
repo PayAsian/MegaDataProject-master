@@ -19,9 +19,11 @@ public:
     DoubleList();
     ~DoubleList();
     void add(Type data);
-    Type remove(int index);
     void addAtIndexFast(int index, Type value);
+    void addAtIndex(int index, Type value);
     Type getFromIndexFast(int index);
+    Type remove(int index);
+    Type getFromIndex(int index);
 }
 
 template<class Type>
