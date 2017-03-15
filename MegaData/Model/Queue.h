@@ -29,7 +29,7 @@ public:
 template<class Type>
 Queue<Type> :: Queue() : DoublyLinkedList<Type>()
 {
-    r
+    
 }
 
 template<class Type>
