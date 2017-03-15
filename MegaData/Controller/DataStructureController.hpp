@@ -17,6 +17,8 @@
 #include "../Model/FoodItem.hpp"
 #include "../Model/CircularList.h"
 #include "../Model/Timer.hpp"
+#include "../Model/DoubleList.h"
+#include "../Model/BiDirectionalNode.h"
 #include <string>
 
 using namespace std;

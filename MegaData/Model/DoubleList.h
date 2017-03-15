@@ -24,7 +24,7 @@ public:
     Type getFromIndexFast(int index);
     Type remove(int index);
     Type getFromIndex(int index);
-}
+};
 
 template<class Type>
 void DoubleList<Type> :: add(Type value)
@@ -79,5 +79,5 @@ Type DoubleList<Type> :: getFromIndexFast(int index)
     }
     valueAtIndex = reference->getNodeData();
     return valueAtIndex;
-}ß
+}
 #endif /* DoubleList_h */
