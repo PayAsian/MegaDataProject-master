@@ -59,7 +59,33 @@ DoubleList<Type> :: ~DoubleList()
 template<class Type>
 void DoubleList<Type> :: addAtIndex(int index, Type value)
 {
-    
+    assert(index >= 0 && index <= this->getSize());
+    if(index == 0)
+    {
+        addFront(value);
+    }
+    else if(index == 0)
+    {
+        addEnd(value);
+    }
+    else
+    {
+        Node<Type> * insertedNode = new Node<Type>(value);
+        Node<Type> * current = this->getFront();
+        Node<Type> * previous = nullptr;
+        
+        for(int position = 0; position < index; position++)
+        {
+            previous = current;
+            current = current->getnextPointer();
+        }
+        
+        previous->setnextPointer(insertedNode);
+        insertedNode->setnextPointer(current);
+        
+        this->getSize() + 1;
+    }
+
 }
 
 template<class Type>

@@ -53,6 +53,28 @@ void Stack<Type> :: add(Type valueToAdd)
 }
 
 template<class Type>
+Type Stack<Type> :: pop()
+{
+    assert(this->getSize() > 0);
+    Type removed = this->getEnd()->getNodeData();
+    
+    BiDirectionalNode<Type> * update = this->getEnd();
+    update = update->getPreviousPointer();
+    
+    if(update != nullptr)
+    {
+        update->setNextPointer(nullptr);
+    }
+    
+    delete this->getEnd();
+    
+    this->setEnd(update);
+    
+    this->setSize(this->getSize() - 1);
+    
+    return removed;
+}
+template<class Type>
 void Stack<Type> :: push(Type addedThing)
 {
     BiDirectionalNode<Type> * addToStack = new BiDirectionalNode<Type>(addedThing);
