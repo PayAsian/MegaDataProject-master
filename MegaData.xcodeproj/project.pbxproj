@@ -101,9 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				19B5626A1E675CE000D2D2EF /* Sample Single Type */,
-				1994AF311E71E3870024103D /* Timer.cpp */,
 				1994AF321E71E3870024103D /* Timer.hpp */,
 				199E6F941E523E8900173214 /* Node.hpp */,
+				1994AF311E71E3870024103D /* Timer.cpp */,
 				19BB1F601E54E3A0009EA676 /* Array.h */,
 				1948B5831E5CD99800CD82D5 /* List.h */,
 				1955086C1E64C74C00B97922 /* BiDirectionalNode.h */,
