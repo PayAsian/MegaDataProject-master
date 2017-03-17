@@ -57,7 +57,7 @@ void DataStructureController :: testIntArray()
     {
         cout << temp.getFromIndex(index) << " is at spot " << index << endl;
     }
-    
+}
     void DataStructureController :: testListIntro()
     {
         List<int> sample;
@@ -71,7 +71,7 @@ void DataStructureController :: testIntArray()
             cout << sample.remove(1) << endl;
         }
         
-        count << "Size should read 3 and is " << sample.getSize() << endl;
+        cout << "Size should read 3 and is " << sample.getSize() << endl;
     }
     
     void DataStructureController :: testListTiming()
@@ -82,7 +82,7 @@ void DataStructureController :: testIntArray()
         {
             timingList.add(rand());
         }
-        
+        Timer doubleTimer;
         long slowTime [1000];
         long fastTime [1000];
         double averageSlow = 0.00, averageFast = 0.00;
@@ -93,14 +93,13 @@ void DataStructureController :: testIntArray()
             doubleTimer.startTimer();
             timingList.getFromIndex(randomIndex);
             doubleTimer.stopTimer();
-            slowTime[index] = doubleTimer.getExecuionTimeInMicroseconds();
+            slowTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
             doubleTimer.resetTimer();
             
             doubleTimer.startTimer();
             timingList.getFromIndexFast(randomIndex);
             doubleTimer.stopTimer();
-            fastTimer.stopTimer();
-            fastTime[index] = doubleTimer.getExecuionTimeInMicroseconds();
+            fastTime[index] = doubleTimer.getExecutionTimeInMicroseconds();
             doubleTimer.resetTimer();
             
             averageSlow += slowTime[index];
@@ -135,10 +134,10 @@ void DataStructureController :: testIntArray()
     void DataStructureController :: testIntStack()
     {
         Stack<int> numberStack;
-        numberSacck.add(2315);
+        numberStack.add(2315);
         numberStack.push(32);
         int testValue = numberStack.pop();
         cout << "Test value is " << testValue << " and should be 32 " << endl;
     }
     
-}
+

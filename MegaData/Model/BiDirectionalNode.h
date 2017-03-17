@@ -43,14 +43,14 @@ BiDirectionalNode<Type> :: BiDirectionalNode() : Node<Type>(data)
 template<class Type>
 BiDirectionalNode<Type> :: BiDirectionalNode(Type data) : Node<Type>(data)
 {
-    this->nextPointer = nullptr;
+    this->next = nullptr;
     this->previous = nullptr;
 }
 
 template<class Type>
 BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getNextPointer()
 {
-    return this->nextPointer;
+    return this->next;
 }
 
 template<class Type>
@@ -62,14 +62,14 @@ BiDirectionalNode<Type> * BiDirectionalNode<Type> :: getPreviousPointer()
 template<class Type>
 BiDirectionalNode<Type> :: BiDirectionalNode(Type data, BiDirectionalNode<Type> * previous, BiDirectionalNode<Type> * next) : Node<Type>(data, next)
 {
-    this->nextPoiner = next;
+    this->next = next;
     this->previous = previous;
 }
 
 template<class Type>
 void BiDirectionalNode<Type> :: setNextPointer(BiDirectionalNode<Type> * next)
 {
-    this->nextPointer = next;
+    this->next = next;
 }
 
 template<class Type>

@@ -33,7 +33,7 @@ public:
     void addFront(Type value);
     void addEnd(Type value);
     
-    void remove(int index, Type data);
+    Type remove(int index);
     int getSize() const;
     bool contains(Type value);
     Node<Type> * getFront() const;
@@ -200,7 +200,7 @@ void List<Type> :: addAtIndex(int index, Type value)
 }
 
 template<class Type>
-void List<Type> :: remove(int index, Type  data)
+Type List<Type> :: remove(int index)
 {
     assert(index >= 0 && index < size);
     Type removed;
@@ -217,7 +217,7 @@ void List<Type> :: remove(int index, Type  data)
     
     toBeRemoved = current;
     previous->setnextPointer(nullptr);
-    this-end = previous;
+    this->end = previous;
     
     if(index == 0)
     {
