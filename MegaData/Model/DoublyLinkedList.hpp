@@ -47,6 +47,12 @@ DoublyLinkedList<Type> :: ~DoublyLinkedList()
     }
 }
 
+template <class Type>
+void DoublyLinkedList<Type> :: add(Type data)
+{
+    
+}
+
 template<class Type>
 DoublyLinkedList<Type> :: DoublyLinkedList()
 {

@@ -165,7 +165,7 @@ Type DoubleList<Type>:: remove(int index)
     if(index == 0)
     {
         this->setFront(this->getFront()->getNextPointer());
-        this->getFront()->getPreviousPointer(nullptr);
+        this->getFront()->getPreviousPointer();
     }
     else if(index == this->getSize() - 1)
     {
