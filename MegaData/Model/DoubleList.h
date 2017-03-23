@@ -24,8 +24,50 @@ public:
     Type getFromIndexFast(int index);
     Type remove(int index);
     Type getFromIndex(int index);
+    int indexOf(Type findMe);
+    int nextIndexOf(Type value, int position);
 };
 
+template<class Type>
+int DoubleList<Type> :: indexOf(Type findMe)
+{
+    int index = -1;
+    
+    BiDirectionalNode<Type>* searchPointer = this->getFront();
+    
+    for(int spot = 0; spot < this->getSize(); spot++)
+    {
+        if(findMe == searchPointer->getNodeData())
+        {
+            return spot;
+        }
+        searchPointer = searchPointer->getNextpointer();
+    }
+    
+    return index;
+}
+
+template<class Type>
+int DoubleList<Type> :: nextIndexOf(Type value, int position)
+{
+    assert(position >= 0 && position < this->getSize());
+    
+    int nextIndex = -1;
+    
+    BiDirectionalNode<Type> * current = this->getFront();
+    
+    for(int index = 0; index < this->getSize(); index++)
+    {
+        if(current->getNodeData() == value)
+        {
+            return index;
+        }
+        current = current->getNextPointer();
+
+    }
+    return nextIndex;
+    
+}
 
 template<class Type>
 DoubleList<Type> :: DoubleList()
