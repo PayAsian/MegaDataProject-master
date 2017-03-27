@@ -33,6 +33,11 @@ public:
     void setCost(double cost);
     void setDelicious(bool delicious);
     
+    bool operator < (FoodItem & otherFood);
+    bool operator > (FoodItem & otherFood);
+    bool operator == (FoodItem & otherFood);
+    
+    
 };
 
 #endif /* FoodItem_hpp */
